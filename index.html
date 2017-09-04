@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)http://caibaojian.com/demo/2015/3/bootstrap-tabs.html#panel-2 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="icon" type="image/png" href="https://o4a7cbihz.qnssl.com/picture/57140c0c-4ffa-4dde-9757-570b53f96796" sizes="32x32">
+	<title>新大 | Javascript | lesson7</title>
+	<script type="text/javascript" src="./public/jquery.min.js"></script>
+	<script src="./public/bootstrap.min.js"></script>
+	<link href="./public/bootstrap.min.css" rel="stylesheet">
+  <script src="./public/imagesloaded.js"></script>
+  <script type="text/javascript" src="./public/masonry.js"></script>
+  <link rel="stylesheet" href="./public/style.css">
+  <script src="./public/vue.min.js"></script>  
+</head>
+<body>
+  
+<div id="app">
+    <div class="jumbotron" >
+        <div class="container">
+          <h1 class="text-center" >Javescript编程入门</h1>
+          <h2></h2>
+          <h2></h2>
+          <h2></h2>
+          <p class="text-center">授课老师: 徐高阳</p>
+          <p class="text-center"><a class="btn btn-shollow btn-lg" href="#" role="button" onclick="alert('戳我干嘛？...ʕ•̫͡•ʔ')" >ʕ•̫͡•ʔ</a></p>
+        </div>
+      </div> 
+      
+          <!-- success panel contents -->
+        <div class="container">
+            <div class="panel panel-success">
+          <div class="panel-heading" >---连续完成作业榜单---</div>
+          <ul class="list-group">
+              <li class="list-group-item"><h4>Never go on trips with anyone you do not love.  <small>————海明威</small></h4></li>
+              <li class="list-group-item"><h4>你知道什么是天才的诀窍吗？那就是永远只做一件事 <small>————王小波</small></h4></li>
+              <li class="list-group-item"><h4>世界上一成不变的东西，只有“任何事物都是在不断变化的”这条真理.  <small>————斯里兰卡</small></h4></li>
+              <li class="list-group-item"><h4>撸起袖子加油干.  <small>————2017</small></h4></li>
+              <li class="list-group-item"><h4>世界上只有两句真理：1、人一定会死。2、程序一定有Bug。.  <small>————网友</small></h4></li>
+            </ul>
+          </div>
+        </div><!--panel container-->
+        <div class="container">
+            <div class="panel panel-success">
+          <div class="panel-heading" >------我们的心里话------</div>
+          </div>
+        </div>
+    <div class=" container">
+        <nav class="navbar navbar-default navbar-fixed-top">
+           <div class="container-fluid">
+             <div class="navbar-header">
+               <div class="container">
+                      <a class="navbar-brand" href="http://js.xinshengdaxue.com/">
+                      <img alt="Brand" src="https://o4a7cbihz.qnssl.com/picture/57140c0c-4ffa-4dde-9757-570b53f96796">
+                      </a>
+                      <a href="http://js.xinshengdaxue.com/">
+                     <p class="navbar-text">首页</p></a>
+               </div>
+              </div>
+            </div>
+         </nav>
+       <div>
+          
+<div class="container ">
+<div class="col-md-11 ">
+    <div class="tab-content"> 
+              <div role="tabpanel" class="tab-pane active" id="panel-1">
+                <div class="row masonry-container">
+                  <div class="col-md-3 col-sm-6 ">
+                    <div class="thumbnail" v-for="item in wordsList0">
+                      <img v-bind:src="item.avatar"alt="">
+                      <div class="caption">
+                    <h3>{{ item.name }}</h3>
+                    <p>{{ item.words }}</p>
+                <p><a href="http://js.xinshengdaxue.com/" class="btn btn-success" role="button">点赞</a> <a href="http://js.xinshengdaxue.com/#" class="btn btn-default" role="button">留言</a></p>
+              </div>
+            </div>
+          </div><!--/.item  -->
+
+      <div role="tabpanel" class="tab-pane" id="panel-2">
+
+        <div class="row masonry-container">
+          <div class="col-md-3 col-sm-6 item">
+            <div class="thumbnail" v-for="item in wordsList1">
+                <img v-bind:src="item.avatar"alt="">
+                <div class="caption">
+              <h3>{{ item.name }}</h3>
+              <p>{{ item.words }}</p>
+              <p><a href="http://js.xinshengdaxue.com/" class="btn btn-success" role="button">点赞</a> <a href="http://js.xinshengdaxue.com/#" class="btn btn-default" role="button">留言</a></p>              </div>
+            </div>
+          </div><!--/.item  -->
+
+          <div role="tabpanel" class="tab-pane" id="panel-4">
+              
+                      <div class="row masonry-container">
+                        <div class="col-md-3 col-sm-6 item">
+                          <div class="thumbnail" v-for="item in wordsList2">
+                              <img v-bind:src="item.avatar"alt="">
+                              <div class="caption">
+                            <h3>{{ item.name }}</h3>
+                            <p>{{ item.words }}</p>
+                            <p><a href="http://js.xinshengdaxue.com/" class="btn btn-success" role="button">点赞</a> <a href="http://js.xinshengdaxue.com/#" class="btn btn-default" role="button">留言</a></p>                            </div>
+                          </div>
+                        </div><!--/.item  -->
+
+      <div role="tabpanel" class="tab-pane" id="panel-3">
+        <div class="row masonry-container">
+
+          <div class="col-md-3 col-sm-6 item">
+              <div class="thumbnail" v-for="item in wordsList3">
+                  <img v-bind:src="item.avatar"alt="">
+                  <div class="caption">
+                <h3>{{ item.name }}</h3>
+                <p>{{ item.words }}</p>
+                <p><a href="http://js.xinshengdaxue.com/" class="btn btn-success" role="button">点赞</a> <a href="http://js.xinshengdaxue.com/#" class="btn btn-default" role="button">留言</a></p>              </div>
+            </div>
+          </div><!--/.item  -->
+
+        </div> <!--/.masonry-container  -->
+      </div><!--/.tab-panel -->
+
+    </div> <!--/.tab-content -->
+
+  </div> <!--/.tab-panel  -->
+</div><!--/col-md-10  -->
+</div><!-- /.container -->
+<div class="footer">
+    <a class="avatar" href="http://js.xinshengdaxue.com/">
+  <img class="avatar" src="https://o4a7cbihz.qnssl.com/picture/57140c0c-4ffa-4dde-9757-570b53f96796"></a>
+  </div>
+<script type="text/javascript">
+	/* Demo Scripts for Making Twitter Bootstrap 3 Tab Play Nicely With The Masonry Library
+* on SitePoint by Maria Antonietta Perna
+*/
+
+//Initialize Masonry inside Bootstrap 3 Tab component 
+
+(function( $ ) {
+
+    var $container = $('.masonry-container');
+    $container.imagesLoaded( function () {
+        $container.masonry({
+            columnWidth: '.item',
+            itemSelector: '.item'
+        });
+    });
+    
+    //Reinitialize masonry inside each panel after the relative tab link is clicked - 
+    $('a[data-toggle=tab]').each(function () {
+        var $this = $(this);
+
+        $this.on('click', function () {
+        
+            $container.imagesLoaded( function () {
+                $container.masonry({
+                    columnWidth: '.item',
+                    itemSelector: '.item'
+                });
+            });
+
+        }); //end shown
+    });  //end each
+    
+})(jQuery);
+</script>
+
+
+<script>
+var app = new Vue({
+  el: '#app1',
+  components: {
+    'waterfall': Waterfall.waterfall,
+    'waterfall-slot': Waterfall.waterfallSlot
+  },
+  data: {
+    grow: [3, 2, 1, 2],
+    items: ItemFactory.get(100),
+    isBusy: false
+  },
+  methods: {
+    addItems: function () {
+      if (!this.isBusy && this.items.length < 500) {
+        this.isBusy = true
+        this.items.push.apply(this.items, ItemFactory.get(50))
+      }
+    },
+    shuffle: function () {
+      this.items.sort(function () {
+        return Math.random() - 0.5
+      })
+    },
+    reflowed: function () {
+      this.isBusy = false
+    }
+  }
+})
+
+document.body.addEventListener('click', function () {
+  app.shuffle()
+  // app.$refs.waterfall.$emit('reflow') // manually trigger reflow action
+}, false)
+
+window.addEventListener('scroll', function () {
+  var scrollTop = document.documentElement.scrollTop || document.body.scrollTop
+  if (scrollTop + window.innerHeight >= document.body.clientHeight) {
+    app.addItems()
+  }
+})
+
+</script>
+<script src="./public/fileList.js"></script>
+<script>
+    
+      // 把收集的数据放在这里
+      new Vue({
+        el: '#app',   // #app 和html中div#id的 app 对应
+        data: {
+          wordsList0: wordsList0,
+          wordsList1: wordsList1,
+          wordsList2: wordsList2,
+          wordsList3: wordsList3,
+        }
+      });
+      
+      </script>
+</body></html>
