@@ -85,3 +85,8 @@
 .list-group{
   text-align: center; 
 }
+.video { 
+  height: 100%;
+  width: 100%;
+  display: block;
+ } 
