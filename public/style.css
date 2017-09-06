@@ -1,9 +1,9 @@
 .navbar-brand>img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     margin-left: 40px;
 }
-.main-header {
+.main-header {  
     padding-top: 220px;
     padding-bottom: 220px;
     margin-bottom: 50px;
@@ -61,4 +61,13 @@
   float: left;
   margin-right: 18px;
   cursor: default;
+}
+.panel-heading{
+  text-align: center;
+  position: relative;
+  font-size: 18px;
+}
+.formbear{
+  text-align: center;
+  position: relative;
 }

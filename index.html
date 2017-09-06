@@ -23,8 +23,8 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li><a href="#">首页 <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">心里话</a></li>
+              <li><a href="http://js.xinshengdaxue.com/">首页 <span class="sr-only">(current)</span></a></li>
+              <li><a href="https://github.com/babysodme/homework_lesson7.git"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>&nbsp GitHub</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -73,7 +73,7 @@
               <div class="col-md-6" style="margin-top:5px">
                  <form><div class="form-group">
                      <div id="legend" class="">
-                     <legend class="">ʕ•̫͡•ʔ...有话对老师说栏目组...ʕ•̫͡•ʔ</legend>
+                     <legend class="panel-heading">ʕ•̫͡•ʔ...有话对老师说栏目组...ʕ•̫͡•ʔ</legend>
                      </div>
                 <label class="control-label" for="input01">姓名</label>
                 <input type="text" class="form-control" placeholder="ʕ•̫͡•ʔ'...姓名Name...ʕ•̫͡•ʔ" id="name">
@@ -93,7 +93,7 @@
           <!-- success panel contents -->
           <div class="container">
               <div class="panel panel-default">
-                  <div class="panel-heading" >---连续完成作业榜单---</div>
+                  <div class="panel-heading" text="center">---连续完成作业榜单---</div>
                 <ul class="list-group">
                   <li class="list-group-item"><h4>Never go on trips with anyone you do not love.  <small>————海明威</small></h4></li>
                   <li class="list-group-item"><h4>你知道什么是天才的诀窍吗？那就是永远只做一件事 <small>————王小波</small></h4></li>
@@ -157,16 +157,16 @@
 </div>
 </body>
 </html>
-<script src="./public/fileList.js"></script>
+
 <script>
  // 把收集的数据放在这里
       var app = new Vue({
         el: '#app',   // #app 和html中div#id的 app 对应
         data: {
-          wordsList0: wordsList0,
-          wordsList1: wordsList1,
-          wordsList2: wordsList2,
-          wordsList3: wordsList3,
+          wordsList0: [],
+          wordsList1: [],
+          wordsList2: [],
+          wordsList3: [],
           gitList: [], // 变量wordsList可以在html使用
         },
         methods: {
@@ -178,6 +178,28 @@
           .catch(function (error) {
             console.log(error);
           });
+        },
+        fetchDatawords: function () {
+          var wordsList =[];
+          axios.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/words')
+          .then(function (response) {
+            wordsList = response.data.words
+            (function(arr, len){
+              var a_len = arr.length;
+           var result = [];
+           for (var i = 0; i < a_len; i += len) {
+            result.push(arr.slice(i, i + len));
+             }
+           app.wordsList0 = result[0];
+           app.wordsList1 = result[1];
+           app.wordsList2 = result[2];
+           app.wordsList3 = result[3];
+            })(wordsList,4);
+          })
+  
+          .catch(function (error) {
+            console.log(error);
+          });     
         },
           sendData: function () {
             var name = document.getElementById("name").value;
@@ -200,5 +222,8 @@
          }
       })
       app.fetchData();
+      app.fetchDatawords();
+      
+      
       </script>
 
