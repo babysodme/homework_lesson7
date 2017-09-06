@@ -1,184 +1,204 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0"> 
-	<link rel="icon" type="image/png" href="https://o4a7cbihz.qnssl.com/picture/57140c0c-4ffa-4dde-9757-570b53f96796" sizes="32x32">
+  <meta content="noindex, nofollow, noimageindex">
+  	<link rel="icon" type="image/png" href="https://o4a7cbihz.qnssl.com/picture/57140c0c-4ffa-4dde-9757-570b53f96796" sizes="32x32">
 	<title>新大 | Javascript | lesson7</title>
-	<script src="./public/bootstrap.min.js"></script>
-	<link href="./public/bootstrap.min.css" rel="stylesheet">
-  <script src="./public/imagesloaded.js"></script>
-  <script type="text/javascript" src="./public/masonry.js"></script>
+	<script href="./public/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="./public/style.css">
-  <script src="./public/vue.min.js"></script>  
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="https://unpkg.com/vue"></script>
 </head>
 <body>
   
 <div id="app">
-    <div class="container">
-        <div >
-        <video autoplay loop poster="polina.jpg" class="video" > 
-            <source src="https://o3pvuu23u.qnssl.com/webm/tinfinite.webm" type="video/webm">  
-           <source src="https://o3pvuu23u.qnssl.com/mp4/tinfinite.mp4" type="video/mp4">
-          </video>
-        
-      </div>
-      </div>
-    <div class="jumbotron" >
-        <div class="container">
-          <h1 calss="title" class="text-center" style="padding:50px"  >Javescript编程入门</h1>
-          <p class="text-center">授课老师: 徐高阳</p>
-          <p class="text-center"><a class="btn btn-shollow btn-lg" role="button" onclick="alert('戳我干嘛？...ʕ•̫͡•ʔ')" >ʕ•̫͡•ʔ</a></p>
-        </div>
-      </div> 
-      
-          <!-- success panel contents -->
-        <div class="container">
-            <div class="panel panel-success">
-          <div class="panel-heading" >---连续完成作业榜单---</div>
-          <ul class="list-group">
-              <li class="list-group-item"><h4>Never go on trips with anyone you do not love.  <small>————海明威</small></h4></li>
-              <li class="list-group-item"><h4>你知道什么是天才的诀窍吗？那就是永远只做一件事 <small>————王小波</small></h4></li>
-              <li class="list-group-item"><h4>世界上一成不变的东西，只有“任何事物都是在不断变化的”这条真理.  <small>————斯里兰卡</small></h4></li>
-              <li class="list-group-item"><h4>撸起袖子加油干.  <small>————2017</small></h4></li>
-              <li class="list-group-item"><h4>世界上只有两句真理：1、人一定会死。2、程序一定有Bug。.  <small>————网友</small></h4></li>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <a class="navbar-brand" href="http://js.xinshengdaxue.com/">
+              <img alt="Brand" src="https://o4a7cbihz.qnssl.com/picture/57140c0c-4ffa-4dde-9757-570b53f96796">
+              </a>
+          </div>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">心里话</a></li>
             </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    <div class="container">
+        <div style="position: absolute; z-index: -1; top: 0px; left: 0px; bottom: 0px; right: 0px; overflow: hidden; background-size: cover; background-repeat: no-repeat; background-position: 50% 0%; height:1080px; background-image: url(https://o4a7cbihz.qnssl.com/cover/a1b0801d-102a-4d8e-b3a5-b911d5881aae?imageView2/5/w/1920/h/1080);">
+          <video autoplay loop poster="polina.jpg" style="margin: auto; position: absolute; z-index: -1; top: 0%; left: 50%; transform: translate(-50%, 0%); visibility: visible; width: auto; height: 750px;">
+            <source src="https://o3pvuu23u.qnssl.com/webm/tinfinite.webm" type="video/webm">
+            <source src="https://o3pvuu23u.qnssl.com/mp4/tinfinite.mp4" type="video/mp4">
+          </video>
+             <div style="position: absolute; z-index: -1; top: 0px; left: 0px; bottom: 0px; right: 0px; overflow: hidden; background-size: cover; background-repeat: no-repeat; opacity: 0.4; background-position: 50% 0%; height:1080px; background-image: url(https://o4a7cbihz.qnssl.com/cover/a1b0801d-102a-4d8e-b3a5-b911d5881aae?imageView2/5/w/1920/h/1080);"></div>
+           <div>
+            <a href="">
+            <img class="text-center" alt="logo" width="67" height="19" src="https://o4a7cbihz.qnssl.com/picture/57140c0c-4ffa-4dde-9757-570b53f96796"style="padding:100px" ></a>
           </div>
-        </div><!--panel container-->
-        <div class="container">
-            <div class="panel panel-success">
-          <div class="panel-heading" >------我们的心里话------</div>
-          </div>
-        </div>
-    <div class=" container">
-        <nav class="navbar navbar-default navbar-fixed-top">
-           <div class="container-fluid">
-             <div class="navbar-header">
-               <div class="container">
-                      <a class="navbar-brand" href="http://js.xinshengdaxue.com/">
-                      <img alt="Brand" src="https://o4a7cbihz.qnssl.com/picture/57140c0c-4ffa-4dde-9757-570b53f96796">
-                      </a>
-                      <a href="http://js.xinshengdaxue.com/">
-                     <p class="navbar-text">首页</p></a>
-               </div>
+          <div class="container">
+            <div class="col-xs-height col-middle text-center">
+              <div class="container">
+                <h1 class="text-white">从0到1赋予代码生命  <br><br>用思维和指尖创造世界<br><br><br><br><small>---Javascript---</small></h1>
               </div>
             </div>
-         </nav>
-       <div>
+          </div>
+        </div>
+      </div>
+      
+       <div class="jumbotron" >
+            <div class="container">
+                  <h1 calss="title" class="text-center" style="padding:50px"  >Javascript编程入门</h1>
+                  <p class="text-center">授课老师: 徐高阳</p>
+                  <p class="text-center"><a class="btn btn-shollow btn-lg" role="button" onclick="alert('戳我干嘛？...ʕ•̫͡•ʔ')" >ʕ•̫͡•ʔ</a></p>
+           </div>
+      </div> 
+      
+      <div class="container" >
+           <div class="container" >
+              <div class="col-md-6 ">
+                  <div class="panel panel-default">
+                        <div class="panel-heading"> <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>&nbsp GIT & GITHUB常用指令</div>
+                    <div class="panel-body" v-for="item in gitList">
+                      <a v-bind:href="item.url">
+                      <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>&nbsp &nbsp{{ item.title }} </a>
+                    </div>
+                  </div>
+                </div><!-- /.container -->
+           <div class="container" >
+              <div class="col-md-6" style="margin-top:5px">
+                 <form><div class="form-group">
+                     <div id="legend" class="">
+                     <legend class="">ʕ•̫͡•ʔ...有话对老师说栏目组...ʕ•̫͡•ʔ</legend>
+                     </div>
+                <label class="control-label" for="input01">姓名</label>
+                <input type="text" class="form-control" placeholder="ʕ•̫͡•ʔ'...姓名Name...ʕ•̫͡•ʔ" id="name">
+                <p class="help-block">---我是分割线--- : ʕ•̫͡•ʔ : ---我是分割线---</p>
+                <label class="control-label" for="input01">账号验证</label>
+                <input type="text" class="form-control" placeholder="ʕ•̫͡•ʔ...新生大学注册账号...ʕ•̫͡•ʔ" id="account">
+                <p class="help-block">---第二只分割线 : ʕ•̫͡•ʔ : 第二只分割线---</p>
+                <label class="control-label" for="input01">心里话</label>
+                <input type="text" class="form-control" placeholder="ʕ•̫͡•ʔ...新生大学注册账号...ʕ•̫͡•ʔ" id="content">
+                
+                <p class="help-block">---凑够三只--- : ʕ•̫͡•ʔ : ---凑够三只---</p>
+                <button type="submit" class="btn btn-default" v-on:click="sendData"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp发送</button>
+              </form>
+             </div>
+          </div><!-- /.container -->
+        </div><!-- /.container 心里话和api&git -->
+          <!-- success panel contents -->
+          <div class="container">
+              <div class="panel panel-default">
+                  <div class="panel-heading" >---连续完成作业榜单---</div>
+                <ul class="list-group">
+                  <li class="list-group-item"><h4>Never go on trips with anyone you do not love.  <small>————海明威</small></h4></li>
+                  <li class="list-group-item"><h4>你知道什么是天才的诀窍吗？那就是永远只做一件事 <small>————王小波</small></h4></li>
+                  <li class="list-group-item"><h4>世界上一成不变的东西，只有“任何事物都是在不断变化的”这条真理.  <small>————斯里兰卡</small></h4></li>
+                  <li class="list-group-item"><h4>撸起袖子加油干.  <small>————2017</small></h4></li>
+                  <li class="list-group-item"><h4>世界上只有两句真理：1、人一定会死。2、程序一定有Bug。.  <small>————网友</small></h4></li>
+                </ul>
+             </div>
+          </div><!--panel container-->
+           <div class="container">
+             <div class="panel panel-default">
+               <div class="panel-heading" >------我们的心里话------</div>
+             </div>
+           </div><!--panel container-->
           
 <div class="container ">
-<div class="col-md-11 ">
-    <div class="tab-content"> 
-              <div role="tabpanel" class="tab-pane active" id="panel-1">
-                <div class="row masonry-container">
+        <div class="col-md-12 ">
                   <div class="col-md-3 col-sm-6 ">
                     <div class="thumbnail" v-for="item in wordsList0">
                       <img v-bind:src="item.avatar"alt="">
                       <div class="caption">
+                       <h3>{{ item.name }}</h3>
+                       <p>{{ item.words }}</p>
+                       <p><a href="http://js.xinshengdaxue.com/" class="btn btn-success" role="button">点赞</a> <a href="http://js.xinshengdaxue.com/#" class="btn btn-default" role="button">留言</a></p>
+                     </div>
+                   </div>
+                 </div><!--col-md-3 col-sm-6 .item  -->
+               <div class="col-md-3 col-sm-6 item">
+                  <div class="thumbnail" v-for="item in wordsList1">
+                     <img v-bind:src="item.avatar"alt="">
+                     <div class="caption">
+                     <h3>{{ item.name }}</h3>
+                     <p>{{ item.words }}</p>
+                     <p><a href="http://js.xinshengdaxue.com/" class="btn btn-success" role="button">点赞</a> <a href="http://js.xinshengdaxue.com/#" class="btn btn-default" role="button">留言</a></p>              </div>
+                 </div>
+              </div><!--col-md-3 col-sm-6 .item   -->
+                 <div class="col-md-3 col-sm-6 item">
+                     <div class="thumbnail" v-for="item in wordsList2">
+                      <img v-bind:src="item.avatar"alt="">
+                      <div class="caption">
+                      <h3>{{ item.name }}</h3>
+                      <p>{{ item.words }}</p>
+                      <p><a href="http://js.xinshengdaxue.com/" class="btn btn-success" role="button">点赞</a> <a href="http://js.xinshengdaxue.com/#" class="btn btn-default" role="button">留言</a></p>                            </div>
+                    </div>
+                </div><!--col-md-3 col-sm-6 .item  -->
+             <div class="col-md-3 col-sm-6 item">
+                <div class="thumbnail" v-for="item in wordsList3">
+                    <img v-bind:src="item.avatar"alt="">
+                    <div class="caption">
                     <h3>{{ item.name }}</h3>
                     <p>{{ item.words }}</p>
-                <p><a href="http://js.xinshengdaxue.com/" class="btn btn-success" role="button">点赞</a> <a href="http://js.xinshengdaxue.com/#" class="btn btn-default" role="button">留言</a></p>
-              </div>
-            </div>
-          </div><!--/.item  -->
-
-      <div role="tabpanel" class="tab-pane" id="panel-2">
-
-        <div class="row masonry-container">
-          <div class="col-md-3 col-sm-6 item">
-            <div class="thumbnail" v-for="item in wordsList1">
-                <img v-bind:src="item.avatar"alt="">
-                <div class="caption">
-              <h3>{{ item.name }}</h3>
-              <p>{{ item.words }}</p>
-              <p><a href="http://js.xinshengdaxue.com/" class="btn btn-success" role="button">点赞</a> <a href="http://js.xinshengdaxue.com/#" class="btn btn-default" role="button">留言</a></p>              </div>
-            </div>
-          </div><!--/.item  -->
-
-          <div role="tabpanel" class="tab-pane" id="panel-4">
-              
-                      <div class="row masonry-container">
-                        <div class="col-md-3 col-sm-6 item">
-                          <div class="thumbnail" v-for="item in wordsList2">
-                              <img v-bind:src="item.avatar"alt="">
-                              <div class="caption">
-                            <h3>{{ item.name }}</h3>
-                            <p>{{ item.words }}</p>
-                            <p><a href="http://js.xinshengdaxue.com/" class="btn btn-success" role="button">点赞</a> <a href="http://js.xinshengdaxue.com/#" class="btn btn-default" role="button">留言</a></p>                            </div>
-                          </div>
-                        </div><!--/.item  -->
-
-      <div role="tabpanel" class="tab-pane" id="panel-3">
-        <div class="row masonry-container">
-
-          <div class="col-md-3 col-sm-6 item">
-              <div class="thumbnail" v-for="item in wordsList3">
-                  <img v-bind:src="item.avatar"alt="">
-                  <div class="caption">
-                <h3>{{ item.name }}</h3>
-                <p>{{ item.words }}</p>
-                <p><a href="http://js.xinshengdaxue.com/" class="btn btn-success" role="button">点赞</a> <a href="http://js.xinshengdaxue.com/#" class="btn btn-default" role="button">留言</a></p>              </div>
-            </div>
-          </div><!--/.item  -->
-
-        </div> <!--/.masonry-container  -->
-      </div><!--/.tab-panel -->
-
-    </div> <!--/.tab-content -->
-
-  </div> <!--/.tab-panel  -->
-</div><!--/col-md-10  -->
+                    <p><a href="http://js.xinshengdaxue.com/" class="btn btn-success" role="button">点赞</a> <a href="http://js.xinshengdaxue.com/#" class="btn btn-default" role="button">留言</a></p>              </div>
+               </div>
+             </div><!--col-md-3 col-sm-6 .item  -->
+       </div><!--/col-md-12  -->
 </div><!-- /.container -->
-<div class="footer">
-    <a class="avatar" href="http://js.xinshengdaxue.com/">
-  <img class="avatar" src="https://o4a7cbihz.qnssl.com/picture/57140c0c-4ffa-4dde-9757-570b53f96796"></a>
+  <div class="footer">
+     <a class="avatar" href="http://js.xinshengdaxue.com/">
+     <img class="avatar" src="https://o4a7cbihz.qnssl.com/picture/57140c0c-4ffa-4dde-9757-570b53f96796"></a>
   </div>
-<script type="text/javascript">
-	/* Demo Scripts for Making Twitter Bootstrap 3 Tab Play Nicely With The Masonry Library
-* on SitePoint by Maria Antonietta Perna
-*/
-
-//Initialize Masonry inside Bootstrap 3 Tab component 
-
-(function( $ ) {
-
-    var $container = $('.masonry-container');
-    $container.imagesLoaded( function () {
-        $container.masonry({
-            columnWidth: '.item',
-            itemSelector: '.item'
-        });
-    });
-    
-    //Reinitialize masonry inside each panel after the relative tab link is clicked - 
-    $('a[data-toggle=tab]').each(function () {
-        var $this = $(this);
-
-        $this.on('click', function () {
-        
-            $container.imagesLoaded( function () {
-                $container.masonry({
-                    columnWidth: '.item',
-                    itemSelector: '.item'
-                });
-            });
-
-        }); //end shown
-    });  //end each
-    
-})(jQuery);
-</script>
+</div>
+</body>
+</html>
 <script src="./public/fileList.js"></script>
 <script>
-    
-      // 把收集的数据放在这里
-      new Vue({
+ // 把收集的数据放在这里
+      var app = new Vue({
         el: '#app',   // #app 和html中div#id的 app 对应
         data: {
           wordsList0: wordsList0,
           wordsList1: wordsList1,
           wordsList2: wordsList2,
           wordsList3: wordsList3,
-        }
-      });
-      
+          gitList: [], // 变量wordsList可以在html使用
+        },
+        methods: {
+          fetchData: function () {
+          axios.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/catelog')
+          .then(function (response) {
+            app.gitList = response.data.catelog.gitTopicsList
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+        },
+          sendData: function () {
+            var name = document.getElementById("name").value;
+            var account = document.getElementById("account").value;
+            var content = document.getElementById("content").value;
+           axios.post('https://js.xinshengdaxue.com/api/v1/learnJS/sayToMe',
+          {
+            name: name,
+            account: account,
+            content: content,
+          })
+          .then(function (response) {
+            console.log(response);
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+        //TODO: 对老师说点什么呢？
+          }
+         }
+      })
+      app.fetchData();
       </script>
-</body></html>
+

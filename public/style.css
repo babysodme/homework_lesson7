@@ -1,6 +1,6 @@
 .navbar-brand>img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     margin-left: 40px;
 }
 .main-header {
@@ -15,11 +15,6 @@
     font-size: 40px;
     color: #000000;
   }
-  
-  .words-pannel {
-    margin-top: 10px;
-  }
-  
   .avatar {
     height: 48px;
     width: 48px;
@@ -31,39 +26,21 @@
     margin-right: 18px;
     cursor: default;
   }
-  .body {
-    padding-top: 50px;
-  }
-  
-  .main-container {
-    padding: 40px 15px;
-  }
-  .p {
-    text-align: center;
-  }
+
+ 
   .jumbotron {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 685px;
+    margin-bottom: 10px;
     background-image: url(https://o4a7cbihz.qnssl.com/avatar/614bb7be-491b-4c23-be79-0bb504ec54f6);
     background-position: center;
     width: auto;
-    height: auto;
+    height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     color: white;
     text-shadow: black 0.1em 0.1em 0.1em;
    
-}
-.panel-heading{
-  text-align: center;
-  position: relative;
-  font-size: 18px;
-}
-.panel-body{
-  text-align: center;
-  position: relative;
-  font-size: 18px;
 }
 .footer {
   position: relative;
@@ -85,11 +62,3 @@
   margin-right: 18px;
   cursor: default;
 }
-.list-group{
-  text-align: center; 
-}
-.video { 
-  height: 100%;
-  width: 100%;
-  display: block;
- } 
