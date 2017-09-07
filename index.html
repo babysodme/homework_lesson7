@@ -183,7 +183,7 @@
           var wordsList =[];
           axios.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/words')
           .then(function (response) {
-            wordsList = response.data.words
+            wordsList = response.data.words;
             (function(arr, len){
               var a_len = arr.length;
            var result = [];
@@ -194,7 +194,7 @@
            app.wordsList1 = result[1];
            app.wordsList2 = result[2];
            app.wordsList3 = result[3];
-            })(wordsList,4);
+            })(wordsList,wordsList.length/4);
           })
   
           .catch(function (error) {
