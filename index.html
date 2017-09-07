@@ -54,7 +54,7 @@
             <div class="container">
                   <h1 calss="title" class="text-center" style="padding:50px"  >Javascript编程入门</h1>
                   <p class="text-center">授课老师: 徐高阳</p>
-                  <p class="text-center"><a class="btn btn-shollow btn-lg" role="button" onclick="alert('戳我干嘛？...ʕ•̫͡•ʔ')" >ʕ•̫͡•ʔ</a></p>
+                  <p class="text-center"><a class="btn btn-shollow btn-lg" role="button" v-on:click="alertBear" >ʕ•̫͡•ʔ</a></p>
            </div>
       </div> 
       
@@ -201,6 +201,10 @@
             console.log(error);
           });     
         },
+	 alertBear:function(){
+          var bearsiri = ['戳我干嘛？...ʕ•̫͡•ʔ','不要戳人家嘛...ʕ•̫͡•ʔ','你就说我帅不帅...ʕ•̫͡•ʔ','Promise me you\'ll never forget me because if I thought you would I\'d never leave....ʕ•̫͡•ʔ','在issues里给我提个问题即可...ʕ•̫͡•ʔ','此处有bug...ʕ•̫͡•ʔ','复制 粘贴拿起键盘就是干！...ʕ•̫͡•ʔ','惊喜不惊喜...ʕ•̫͡•ʔ','意外不意外...ʕ•̫͡•ʔ']
+          alert(bearsiri[Math.round(Math.random()*bearsiri.length)]) 
+          },
           sendData: function () {
             var name = document.getElementById("name").value;
             var account = document.getElementById("account").value;
