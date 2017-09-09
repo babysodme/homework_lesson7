@@ -1,231 +1,369 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+
+<head>
   <meta content="noindex, nofollow, noimageindex">
-  	<link rel="icon" type="image/png" href="https://o4a7cbihz.qnssl.com/picture/57140c0c-4ffa-4dde-9757-570b53f96796" sizes="32x32">
-	<title>新大 | Javascript | lesson7</title>
-	<script href="./public/bootstrap.min.js"></script>
-	<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="icon" type="image/png" href="https://o4a7cbihz.qnssl.com/picture/57140c0c-4ffa-4dde-9757-570b53f96796" sizes="32x32">
+  <title>新大 | Javascript | lesson7</title>
   <link rel="stylesheet" href="./public/style.css">
+  <link rel="stylesheet" href="http://www.bootcss.com/p/buttons/css/buttons.css">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://unpkg.com/vue"></script>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-  
-<div id="app">
+  <div id="app">
     <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <a class="navbar-brand" href="http://js.xinshengdaxue.com/">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="http://js.xinshengdaxue.com/">
               <img alt="Brand" src="https://o4a7cbihz.qnssl.com/picture/57140c0c-4ffa-4dde-9757-570b53f96796">
               </a>
-          </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li><a href="http://js.xinshengdaxue.com/">首页 <span class="sr-only">(current)</span></a></li>
-              <li><a href="https://github.com/babysodme/homework_lesson7.git"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>&nbsp GitHub</a></li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="http://js.xinshengdaxue.com/">首页 <span class="sr-only">(current)</span></a></li>
+            <li><a href="https://github.com/babysodme/homework_lesson7.git"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>&nbsp GitHub</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
     <div class="container">
-        <div style="position: absolute; z-index: -1; top: 0px; left: 0px; bottom: 0px; right: 0px; overflow: hidden; background-size: cover; background-repeat: no-repeat; background-position: 50% 0%; height:1080px; background-image: url(https://o4a7cbihz.qnssl.com/cover/a1b0801d-102a-4d8e-b3a5-b911d5881aae?imageView2/5/w/1920/h/1080);">
-          <video autoplay loop  style="margin: auto; position: absolute; z-index: -1; top: 0%; left: 50%; transform: translate(-50%, 0%); visibility: visible; width: auto; height: 750px;">
-            <source src="https://o3pvuu23u.qnssl.com/webm/tinfinite.webm" type="video/webm">
-            <source src="https://o3pvuu23u.qnssl.com/mp4/tinfinite.mp4" type="video/mp4">
-          </video>
-             <div style="position: absolute; z-index: -1; top: 0px; left: 0px; bottom: 0px; right: 0px; overflow: hidden; background-size: cover; background-repeat: no-repeat; opacity: 0.4; background-position: 50% 0%; height:1080px; background-image: url(https://o4a7cbihz.qnssl.com/cover/a1b0801d-102a-4d8e-b3a5-b911d5881aae?imageView2/5/w/1920/h/1080);"></div>
-          <div class="container">
-            <div class="col-xs-height col-middle text-center">
-              <div class="container">
-                <h1 style="padding:150px" class="text-white">从0到1赋予代码生命  <br><br>用思维和指尖创造世界<br><br><br><br><small>---Javascript---</small></h1>
-              </div>
+      <div style="position: absolute; z-index: -1; top: 0px; left: 0px; bottom: 0px; right: 0px; overflow: hidden; background-size: cover; background-repeat: no-repeat; background-position: 50% 0%; height:750px; background-image: url(https://o4a7cbihz.qnssl.com/cover/a1b0801d-102a-4d8e-b3a5-b911d5881aae?imageView2/5/w/1920/h/1080);">
+        <video autoplay loop controls muted style="margin: auto; position: absolute; z-index: -1; top: 0%; left: 50%; transform: translate(-50%, 0%); visibility: visible; width: auto; height: 750px;">
+          <source src="https://o3pvuu23u.qnssl.com/webm/tinfinite.webm" type="video/webm">
+          <source src="https://o3pvuu23u.qnssl.com/mp4/tinfinite.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+          <div class="col-xs-height col-middle text-center">
+            <div class="container">
+              <h1 style="margin-top:25% ; margin-left:-60% ;font-size:60px">毕业季 <span class="glyphicon glyphicon-education" aria-hidden="true"></span></h1>
+              <h2 style="padding:0px ; margin-left:-60%"><br><small> 从0到1赋予代码生命 , 用思维和指尖创造世界 。</small></h2>
             </div>
           </div>
         </div>
       </div>
-      
-       <div class="jumbotron" >
-            <div class="container">
-                  <h1 calss="title" class="text-center" style="padding:50px"  >Javascript编程入门</h1>
-                  <p class="text-center">授课老师: 徐高阳</p>
-                  <p class="text-center"><a class="btn btn-shollow btn-lg" role="button" v-on:click="alertBear" >ʕ•̫͡•ʔ</a></p>
-           </div>
-      </div> 
-      
-      <div class="container" >
-           <div class="container" >
-              <div class="col-md-6 ">
-                  <div class="panel panel-default">
-                        <div class="panel-heading"> <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>&nbsp GIT & GITHUB常用指令</div>
-                    <div class="panel-body" v-for="item in gitList">
-                      <a v-bind:href="item.url">
-                      <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>&nbsp &nbsp{{ item.title }} </a>
+    </div>
+    <div class="container">
+      <div class="jumbotronbanner">
+        <br><br><br><br>
+        <h1 class="text-center" style="padding:0px">Javascript编程入门</h1>
+        <br>
+        <p class="text-center">授课老师: 徐高阳</p>
+        <br>
+        <p class="text-center"><a type="button" class="btn btn-outline button-glow button-border btn-lg " v-on:click="alertBear">ʕ•̫͡•ʔ</a></p>
+        <hr class="hr">
+        <h3 style="padding-top: 40px;" class="text-center"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> 课程记录 <small>Study Programs</small><br><br><small>2017.08.08 - 2017.09.10</small></h3>
+      </div>
+    </div>
+    <div class="container" style="padding:0px">
+      <div class="col-md-12">
+        <div class="col-md-8">
+          <div class="panel" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                      <i class="fa fa-github"></i> 常用指令<small>GIT & GITHUB & Terminal</small>
+                      </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse">
+                <div class="panel-body" v-for="item in gitList">
+                  <a v-bind:href="item.url">
+                          <i class="fa fa-github"></i>&nbsp{{ item.title }} </a>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                      <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> JS课程的技术文档<small>Technical</small>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body" v-for="item in topicsList">
+                  <a v-bind:href="item.url">
+                      <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>&nbsp{{ item.title }} </a>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                      <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span> 老师的PPT<small>Handsome Teacher</small>
+                      </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body" v-for="item in pptList">
+                  <a v-bind:href="item.url">
+                      <span class="glyphicon glyphicon-paperclip" aria-hidden="true"></span>&nbsp{{ item.title }} </a>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                      <span class="glyphicon glyphicon-user" aria-hidden="true"></span> 大宝Javascript学习笔记<small>Note</small>
+                      </a>
+                </h4>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <a>
+                      <span class="glyphicon glyphicon-user" aria-hidden="true"></span>&nbsp老师很帅！同学很酷!<small>（笔记正在整理中）</small> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <a class="thumbnail" href="https://web.xinshengdaxue.com/home/lessons/details?course_id=40">
+        <img src="https://ws3.sinaimg.cn/large/006tKfTcly1fjdgsph6ekj31ju0u0ads.jpg">
+        <div class="caption">
+          <p>Javascript编程入门课程介绍 &nbsp&nbsp&nbsp&nbsp<small>授课老师: 徐高阳</small></p>
+        </div>
+      </a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="container" style="width: 750px; margin:center ;text-align: center; padding-right: auto; padding-left: auto;">
+      <div class="row">
+        <img style="width: 300px ; right: 20px; margin-bottom:30px" class="img-circle" src="https://o4a7cbihz.qnssl.com/avatar/1eb9ac70-0ad0-4029-aae9-22b8f92fe985?imageView2/1/w/760/h/760/interlace/1"
+          alt="七年教育 | 新生大学">
+      </div>
+      <div class="row">
+        <h4 style="margin-bottom:30px">授课老师<small>徐高阳</small></h4>
+        <h4><small>
+               <p>前阿里巴巴技术专家，现新生大学技术VP。</p><p>拥有十三年代码经验，编程语言涵盖C、C++、Java、JS、Ruby等。<p> 拥有丰富的大型项目开发经验，</p><p>在阿里巴巴期间曾带领团队主导操作系统framework研发，现全面负责新生大学技术团队。</p></small></h2>
+          <hr class="hr">
+          <h4 style="margin-bottom:30px">给老师发送心里话
+            <small>Send Words From Heart</small><span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span></h4>
+          <p><span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></p>
+          <button type="button" class="btn btn-outline button-glow button-border btn-lg" data-toggle="modal" data-target="#exampleModal"
+            data-whatever="@getbootstrap">ʕ•̫͡•ʔ</button>
+          <hr class="hr">
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="exampleModalLabel"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> 发给老师的心里话<small>Some Words From Heart</small></h4>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="control-label">姓名<small>Name</small>:</label>
+                      <input v-model="name" type="text" class="form-control">
+                      <label for="recipient-name" class="control-label">新生大学注册账号<small>Account</small>:</label>
+                      <input v-model="account" type="text" class="form-control">
                     </div>
-                  </div>
-                </div><!-- /.container -->
-           <div class="container" >
-              <div class="col-md-6" style="margin-top:5px">
-                 <form><div class="form-group">
-                     <div id="legend" class="">
-                     <legend class="panel-heading">ʕ•̫͡•ʔ...有话对老师说栏目组...ʕ•̫͡•ʔ</legend>
-                     </div>
-                <label class="control-label" for="input01">姓名</label>
-                <input v-model="name" type="text" class="form-control" placeholder="ʕ•̫͡•ʔ'...姓名Name...ʕ•̫͡•ʔ" >
-                <p class="help-block">---我是分割线--- : ʕ•̫͡•ʔ : ---我是分割线---</p>
-                <label class="control-label" for="input01">账号验证</label>
-                <input v-model="account" type="text" class="form-control" placeholder="ʕ•̫͡•ʔ...新生大学注册账号...ʕ•̫͡•ʔ" >
-                <p class="help-block">---第二只分割线 : ʕ•̫͡•ʔ : 第二只分割线---</p>
-                <label class="control-label" for="input01">心里话</label>
-                <input v-model="content" type="text" class="form-control" placeholder="ʕ•̫͡•ʔ...你就说老师帅不帅...ʕ•̫͡•ʔ" >
-                
-                <p class="help-block">---凑够三只--- : ʕ•̫͡•ʔ : ---凑够三只---</p>
-                <button type="submit" class="btn btn-default" v-on:click="sendData"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>&nbsp发送</button>
-              </form>
-             </div>
-          </div><!-- /.container -->
-        </div><!-- /.container 心里话和api&git -->
-          <!-- success panel contents -->
-          <div class="container">
-              <div class="panel panel-default">
-                  <div class="panel-heading" text="center">---连续完成作业榜单---</div>
-                <ul class="list-group">
-                  <li class="list-group-item"><h4>Never go on trips with anyone you do not love.  <small>————海明威</small></h4></li>
-                  <li class="list-group-item"><h4>你知道什么是天才的诀窍吗？那就是永远只做一件事 <small>————王小波</small></h4></li>
-                  <li class="list-group-item"><h4>世界上一成不变的东西，只有“任何事物都是在不断变化的”这条真理.  <small>————斯里兰卡</small></h4></li>
-                  <li class="list-group-item"><h4>撸起袖子加油干.  <small>————2017</small></h4></li>
-                  <li class="list-group-item"><h4>世界上只有两句真理：1、人一定会死。2、程序一定有Bug。.  <small>————网友</small></h4></li>
-                </ul>
-             </div>
-          </div><!--panel container-->
-           <div class="container">
-             <div class="panel panel-default">
-               <div class="panel-heading" >------我们的心里话------</div>
-             </div>
-           </div><!--panel container-->
-          
-<div class="container ">
-        <div class="col-md-12 ">
-                  <div class="col-md-3 col-sm-6 ">
-                    <div class="thumbnail" v-for="item in wordsList0">
-                      <img v-bind:src="item.avatar"alt="">
-                      <div class="caption">
-                       <h3>{{ item.name }}</h3>
-                       <p>{{ item.words }}</p>
-                       <p><a href="http://js.xinshengdaxue.com/" class="btn btn-success" role="button">点赞</a> <a href="http://js.xinshengdaxue.com/#" class="btn btn-default" role="button">留言</a></p>
-                     </div>
-                   </div>
-                 </div><!--col-md-3 col-sm-6 .item  -->
-               <div class="col-md-3 col-sm-6 item">
-                  <div class="thumbnail" v-for="item in wordsList1">
-                     <img v-bind:src="item.avatar"alt="">
-                     <div class="caption">
-                     <h3>{{ item.name }}</h3>
-                     <p>{{ item.words }}</p>
-                     <p><a href="http://js.xinshengdaxue.com/" class="btn btn-success" role="button">点赞</a> <a href="http://js.xinshengdaxue.com/#" class="btn btn-default" role="button">留言</a></p>              </div>
-                 </div>
-              </div><!--col-md-3 col-sm-6 .item   -->
-                 <div class="col-md-3 col-sm-6 item">
-                     <div class="thumbnail" v-for="item in wordsList2">
-                      <img v-bind:src="item.avatar"alt="">
-                      <div class="caption">
-                      <h3>{{ item.name }}</h3>
-                      <p>{{ item.words }}</p>
-                      <p><a href="http://js.xinshengdaxue.com/" class="btn btn-success" role="button">点赞</a> <a href="http://js.xinshengdaxue.com/#" class="btn btn-default" role="button">留言</a></p>                            </div>
+                    <div class="form-group">
+                      <label for="message-text" class="control-label">心里话<small>Content</small>:</label>
+                      <textarea v-model="content" class="form-control"></textarea>
                     </div>
-                </div><!--col-md-3 col-sm-6 .item  -->
-             <div class="col-md-3 col-sm-6 item">
-                <div class="thumbnail" v-for="item in wordsList3">
-                    <img v-bind:src="item.avatar"alt="">
-                    <div class="caption">
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                  <button type="button" v-on:click="sendData" type="button" class="btn btn-primary" data-dismiss="modal"> <span class="glyphicon glyphicon-send" aria-hidden="true"></span> 发送</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- /.container -->
+
+    <div class="container ">
+      <div class="panel panel-success">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                查看同学们的心里话  <small >Some Words From Heart</small><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> 
+            </a>
+          </h4>
+        </div>
+
+
+        <div id="collapseFive" class="panel-collapse collapse">
+          <div class="panel-body">
+            <div class="col-md-12 ">
+              <div class="col-md-3 col-sm-6 ">
+                <div class="thumbnail" v-for="item in wordsList0">
+                  <img class="img-circle" v-bind:src="item.avatar" alt="">
+                  <div class="caption">
                     <h3>{{ item.name }}</h3>
                     <p>{{ item.words }}</p>
-                    <p><a href="http://js.xinshengdaxue.com/" class="btn btn-success" role="button">点赞</a> <a href="http://js.xinshengdaxue.com/#" class="btn btn-default" role="button">留言</a></p>              </div>
-               </div>
-             </div><!--col-md-3 col-sm-6 .item  -->
-       </div><!--/col-md-12  -->
-</div><!-- /.container -->
-  <div class="footer">
-     <a class="avatar" href="http://js.xinshengdaxue.com/">
-     <img class="avatar" src="https://o4a7cbihz.qnssl.com/picture/57140c0c-4ffa-4dde-9757-570b53f96796"></a>
+                    <p><a href="http://js.xinshengdaxue.com/" class="button button-small button-glow button-border button-rounded button-action"> <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span> </a>                      <a href="http://js.xinshengdaxue.com/#" class="button button-small button-glow  button-rounded button-action">Say Hi! <span class="glyphicon glyphicon-send" aria-hidden="true"></span></a></p>
+                  </div>
+                </div>
+              </div>
+              <!--col-md-3 col-sm-6 .item  -->
+              <div class="col-md-3 col-sm-6 item">
+                <div class="thumbnail" v-for="item in wordsList1">
+                  <img v-bind:src="item.avatar" alt="">
+                  <div class="caption">
+                    <h3>{{ item.name }}</h3>
+                    <p>{{ item.words }}</p>
+                    <p><a href="http://js.xinshengdaxue.com/" class="button button-small button-glow button-border button-rounded button-action"> <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span> </a>                      <a href="http://js.xinshengdaxue.com/#" class="button button-small button-glow  button-rounded button-action">Say Hi! <span class="glyphicon glyphicon-send" aria-hidden="true"></span></a></p>
+                  </div>
+                </div>
+              </div>
+              <!--col-md-3 col-sm-6 .item   -->
+              <div class="col-md-3 col-sm-6 item">
+                <div class="thumbnail" v-for="item in wordsList2">
+                  <img class="img-circle" v-bind:src="item.avatar" alt="">
+                  <div class="caption">
+                    <h3>{{ item.name }}</h3>
+                    <p>{{ item.words }}</p>
+                    <p><a href="http://js.xinshengdaxue.com/" class="button button-small button-glow button-border button-rounded button-action"> <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span> </a>                      <a href="http://js.xinshengdaxue.com/#" class="button button-small button-glow button-rounded button-action">Say Hi! <span class="glyphicon glyphicon-send" aria-hidden="true"></span></a></p>
+                  </div>
+                </div>
+              </div>
+              <!--col-md-3 col-sm-6 .item  -->
+              <div class="col-md-3 col-sm-6 item">
+                <div class="thumbnail" v-for="item in wordsList3">
+                  <img v-bind:src="item.avatar" alt="">
+                  <div class="caption">
+                    <h3>{{ item.name }}</h3>
+                    <p>{{ item.words }}</p>
+                    <p><a href="http://js.xinshengdaxue.com/" class="button button-small button-glow button-border button-rounded button-action"> <span class="glyphicon glyphicon-heart-empty" aria-hidden="true"></span> </a>                      <a href="http://js.xinshengdaxue.com/#" class="button button-small button-glow  button-rounded button-action">Say Hi! <span class="glyphicon glyphicon-send" aria-hidden="true"></span></a></p>
+                  </div>
+                </div>
+              </div>
+              <!--col-md-3 col-sm-6 .item  -->
+            </div>
+            <!--/col-md-12  -->
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-</div>
-</div>
+  <!-- /.container -->
+  <hr class="hr">
+  <p style="margin:center ;text-align: center"><span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span></p>
+  <hr class="hr">
+
+  <footer>
+    <div class="footerbg">
+      <br>
+      <h1 style="text-align: center ;font-size: 48px;">
+        <\body>
+      </h1>
+      <br>
+      <p style="text-align: center">从0到1赋予代码生命 , 用思维和指尖创造世界 。</p>
+      <br>
+      <a><img class="footerlogo"  href="http://js.xinshengdaxue.com/" src="https://o4a7cbihz.qnssl.com/picture/57140c0c-4ffa-4dde-9757-570b53f96796"></a>
+      <span
+        class="footerlogo"> Designed by @babysodme in GitHub</span>
+    </div>
+  </footer>
+  </div>
+  </div>
 </body>
+
 </html>
 
 <script>
- // 把收集的数据放在这里
-      var app = new Vue({
-        el: '#app',   // #app 和html中div#id的 app 对应
-        data: {
-          wordsList0: [],
-          wordsList1: [],
-          wordsList2: [],
-          wordsList3: [],
-          gitList: [], // 可以在html使用
-	  name:'',
-          account:'',
-          content:'',
-        },
-        methods: {
-          fetchData: function () {
-          axios.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/catelog')
+  // 把收集的数据放在这里
+  var app = new Vue({
+    el: '#app',   // #app 和html中div#id的 app 对应
+    data: {
+      wordsList0: [],
+      wordsList1: [],
+      wordsList2: [],
+      wordsList3: [],
+      gitList: [],
+      topicsList: [],
+      pptList: [],
+      name: '',
+      account: '',
+      content: '',
+    },
+    methods: {
+      fetchData: function () {
+        axios.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/catelog')
           .then(function (response) {
-            app.gitList = response.data.catelog.gitTopicsList
+            app.gitList = response.data.catelog.gitTopicsList;
+            app.topicsList = response.data.catelog.topicsList;
+            app.pptList = response.data.catelog.pptList
           })
           .catch(function (error) {
             console.log(error);
           });
-        },
-        fetchDatawords: function () {
-          var wordsList =[];
-          axios.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/words')
+      },
+      fetchDatawords: function () {
+        var wordsList = [];
+        axios.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/words')
           .then(function (response) {
             wordsList = response.data.words;
-            (function(arr, len){
+            (function (arr, len) {
+              arr.sort(function () { return Math.random() - 0.5; });
               var a_len = arr.length;
-           var result = [];
-           for (var i = 0; i < a_len; i += len) {
-            result.push(arr.slice(i, i + len));
-             }
-           app.wordsList0 = result[0];
-           app.wordsList1 = result[1];
-           app.wordsList2 = result[2];
-           app.wordsList3 = result[3];
-            })(wordsList,wordsList.length/4);
+              var result = [];
+              for (var i = 0; i < a_len; i += len) {
+                result.push(arr.slice(i, i + len));
+              }
+              app.wordsList0 = result[0];
+              app.wordsList1 = result[1];
+              app.wordsList2 = result[2];
+              app.wordsList3 = result[3];
+            })(wordsList, wordsList.length / 4);
           })
-  
+
           .catch(function (error) {
             console.log(error);
-          });     
-        },
-	 alertBear:function(){
-          var bearsiri = ['戳我干嘛？...ʕ•̫͡•ʔ','不要戳人家嘛...ʕ•̫͡•ʔ','你就说我帅不帅...ʕ•̫͡•ʔ','Promise me you\'ll never forget me because if I thought you would I\'d never leave....ʕ•̫͡•ʔ','在issues里给我提个问题即可...ʕ•̫͡•ʔ','此处有bug...ʕ•̫͡•ʔ','复制 粘贴拿起键盘就是干！...ʕ•̫͡•ʔ','惊喜不惊喜...ʕ•̫͡•ʔ','意外不意外...ʕ•̫͡•ʔ']
-          alert(bearsiri[Math.round(Math.random()*bearsiri.length)]) 
-          },
-          sendData: function () {
-           axios.post('https://js.xinshengdaxue.com/api/v1/learnJS/sayToMe',
+          });
+      },
+      alertBear: function () {
+        var bearsiri = ['戳我干嘛？...ʕ•̫͡•ʔ', '不要戳人家嘛...ʕ•̫͡•ʔ', '你就说我帅不帅...ʕ•̫͡•ʔ', 'Promise me you\'ll never forget me because if I thought you would I\'d never leave....ʕ•̫͡•ʔ', '在issues里给我提个问题即可...ʕ•̫͡•ʔ', '此处有bug...ʕ•̫͡•ʔ', '复制 粘贴拿起键盘就是干！...ʕ•̫͡•ʔ', '惊喜不惊喜...ʕ•̫͡•ʔ', '意外不意外...ʕ•̫͡•ʔ',
+          '自从加了你们这群小白们，我的排名从前10排到了200多。。', '公司有女生就是幸福的', '那是你们未来进阶的方向。怎么培养？多读优秀的代码。一点点积累，有很多同学要走入工程师就要懂这点。 但在如果想学习编程写提升工作效率的脚本时，没必要那么严格要求自己，用最简要的代码达到自己要求即可，如果也能严格要求自己，学到就更多。', '那高手和新手的差异到底在哪？1. 不能手随心动。对编程语法基础知识的熟练度。2.思路的完整度（多错误的兼容度）。', '多买几本相关的书，对照着看。有的深入讲语法、有的讲设计思想、有的将案例实战。多买几本换着看。或许你在一本书上看不懂，换一本可能就让你懂了。我不管学习任何技术都会买好几本书，效果俱佳。特别强调一点，有些书名字看上去比较low，但是别因为面子不好意思买，有些人为了脸面只买大众普遍认为”高档”的书，甚至是原版书。看上去很有面子，但只有学到东西才是里子。学习这件事情，无关脸面，只要对自己有帮助的，不管多基础的书，都可以让你有收获。',
+          '老师，前边有几节课没听会不会影响今天的内容？:听听哲学课和书法课也挺好', 'https://github.com/mzabriskie/axios/issues/975看别人的提问，代码多整洁', '火力全开团队将第七节课的作业通过我开放的api并用axios来处理http请求获取数据。再次打造一番后，页面虽然还是那个页面，前端技术已经焕然一新，可喜可贺，恭喜火力全开团队成员。成员：黄家树 张丽娜 张大美 唐芳 郭威',
+          '阿里的技术进阶路线：普通-> 中级 -> 高级 -> 专家 -> 高级专家 -> 总监 -> 高级总监(架构师)', '毕竟我的第一次给了你们，还是希望能一起成长。', '异步处理三大法宝，promise，await，async。妈妈再也不担心我处理不好异步函数的逻辑复杂了。',
+          '我与大家一起在成才：）', '你的感觉是正确的，JS的第三方库前所未有的多。这是这个语言前所未有的强大和兴旺的表现。在十年前，做一个软件要自己开发很多组件，自己做轮子的感觉很不好，效率也低。所以第三方库多一些不是坏事。关键是你要清楚自己要什么，并不是所有的第三方库都要搞清楚弄明白的，只要符合你的需要就行。实际上，每个程序员或者每个项目组，都有自己的喜好和习惯。总之，能解决问题就好，不用贪多想着自己能全部掌握。就算是最牛逼的程序员，现在也需要时不时的到github上去寻找新的三方库和新项目学习借鉴。',
+          'cooooooooool', '看到@邢亚铭 的作业内容，真的成长了哈哈。恭喜@邢亚铭', 'vue这堂课想简单一点。一个锚点(#app)把html的节点和vue的data数据关联起来，就这么简单', '今晚的有回放吗？:不告诉你。', 'atom更适合高手，vs code交互比较友好，适合初级选手。',
+        ]
+        alert(bearsiri[Math.round(Math.random() * bearsiri.length - 1)])
+      },
+      sendData: function () {
+        axios.post('https://js.xinshengdaxue.com/api/v1/learnJS/sayToMe',
           {
             name: app.name,
             account: app.account,
             content: app.content,
           })
           .then(function (response) {
+            var i = response.data.code;
+            (function () {
+              if (i === 1) {
+                alert('发送成功')
+              } alert('发送失败')
+            })();
             console.log(response);
           })
           .catch(function (error) {
             console.log(error);
           });
         //TODO: 对老师说点什么呢？
-          }
-         }
-      })
-      app.fetchData();
-      app.fetchDatawords();
-      
-      
-      </script>
-
+      }
+    }
+  })
+  app.fetchData();
+  app.fetchDatawords();
+</script>

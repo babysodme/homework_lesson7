@@ -8,7 +8,7 @@
     padding-bottom: 220px;
     margin-bottom: 50px;
     text-align: left;
-    background-image: url(https://o4a7cbihz.qnssl.com/avatar/614bb7be-491b-4c23-be79-0bb504ec54f6);
+    background-image: url();
     background-size:85%;
   }
   .main-header h1 {
@@ -28,28 +28,37 @@
   }
 
  
-  .jumbotron {
+  .jumbotronbanner {
     margin-top: 685px;
     margin-bottom: 10px;
-    background-image: url(https://o4a7cbihz.qnssl.com/avatar/614bb7be-491b-4c23-be79-0bb504ec54f6);
+    background-image: url();
     background-position: center;
     width: auto;
     height: 500px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
-    color: white;
-    text-shadow: black 0.1em 0.1em 0.1em;
-   
+    color: black;
+    
 }
-.footer {
-  position: relative;
-  height: 50px;
-  width: 50px;
+.footerlogo {
+  position: center;
+  height: 40 px;
+  width: 40px;
   top: 50px;
-  left: 50%;
-  margin-left: -12px;
-  color: #c6cbd1;
+  font-size:10px;
+  text-shadow: black 0.05em 0.05em 0.05em;
+}
+.footerbg {
+  background-color: #dff0d8;
+  background-position: center;
+  width: auto;
+  height: 250px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+  text-shadow: black 0.05em 0.05em 0.05em;
 }
 .avatar {
   height: 48px;
@@ -62,12 +71,53 @@
   margin-right: 18px;
   cursor: default;
 }
+.panel {
+  background-color: #FAFAFA;
+  background-position: center;
+  background-size: cover;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  color: #B0B0B0;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  transition: background-color .2s
+  cubic-bezier(0.4, 0, 0.2, 1),box-shadow .3s
+  cubic-bezier(0.4, 0, 0.2, 1),color .2s
+  cubic-bezier(0.4, 0, 0.2, 1),fill .2s
+  cubic-bezier(0.4, 0, 0.2, 1);
+}
 .panel-heading{
   text-align: center;
   position: relative;
-  font-size: 18px;
+  font-size: auto;
+  background-color:#229ffd;
 }
-.formbear{
-  text-align: center;
+.panel:hover {
+  box-shadow: 0 4px 5px rgba(0,0,0,0.4);
+  color: #000;
+}
+.thumbnail{
+  background-color: #FAFAFA;
+  background-position: center;
+  background-size: cover;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  color: #B0B0B0;
+  display: block;
+  overflow: hidden;
   position: relative;
+  transition: background-color .2s
+  cubic-bezier(0.4, 0, 0.2, 1),box-shadow .3s
+  cubic-bezier(0.4, 0, 0.2, 1),color .2s
+  cubic-bezier(0.4, 0, 0.2, 1),fill .2s
+  cubic-bezier(0.4, 0, 0.2, 1);
+}
+.thumbnail:hover {
+  box-shadow: 0 4px 5px rgba(0,0,0,0.4);
+  color: #000;
+}
+.hr {
+  width: 100px;
+  margin: 20px auto;
 }
