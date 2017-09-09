@@ -8,9 +8,11 @@
 ## 标题Markdown常用语法 
 
 # 表格
-=================
----|---|---|---|---|---|
+
 代码块|超链接|图片|标题|有序列表|表格
+---|---|---|---|---|---
+代码块|超链接|图片|标题|有序列表|表格
+
 
 1.新生大学
 2.Javascript
@@ -70,7 +72,29 @@ _single underscores_
 
 可以用反引号把它包起来（`）
 
-Use the `printf()` function.
+
+`fetchDatawords: function () {
+        var wordsList = [];
+        axios.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/words')
+          .then(function (response) {
+            wordsList = response.data.words;
+            (function (arr, len) {
+              arr.sort(function () { return Math.random() - 0.5; });
+              var a_len = arr.length;
+              var result = [];
+              for (var i = 0; i < a_len; i += len) {
+                result.push(arr.slice(i, i + len));
+              }
+              app.wordsList0 = result[0];
+              app.wordsList1 = result[1];
+              app.wordsList2 = result[2];
+              app.wordsList3 = result[3];
+            })(wordsList, wordsList.length / 4);
+          })
+
+          .catch(function (error) {
+            console.log(error);
+          });`
 
 图片 
 
