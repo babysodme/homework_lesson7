@@ -72,8 +72,8 @@ _single underscores_
 
 可以用反引号把它包起来（`）
 
-
-`fetchDatawords: function () {
+ 
+` fetchDatawords: function () {
         var wordsList = [];
         axios.get('https://js.xinshengdaxue.com/api/v1/learnJS/course/1/words')
           .then(function (response) {
@@ -91,10 +91,9 @@ _single underscores_
               app.wordsList3 = result[3];
             })(wordsList, wordsList.length / 4);
           })
-
           .catch(function (error) {
             console.log(error);
-          });`
+          }); `
 
 图片 
 
