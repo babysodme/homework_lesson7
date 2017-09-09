@@ -353,7 +353,8 @@
             var i = response.data.code;
             (function () {
               if (i === 1) {
-                alert('发送成功')
+                alert('发送成功');
+                return
               } alert('发送失败')
             })();
             console.log(response);
