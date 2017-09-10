@@ -42,17 +42,13 @@
   position: center;
   height: 40 px;
   width: 40px;
-  top: 50px;
   font-size:10px;
   text-shadow: black 0.05em 0.05em 0.05em;
 }
 .footerbg {
   background-color: #dff0d8;
   background-position: center;
-  width: auto;
-  height: 250px;
-  padding-bottom: 50px;
-  margin-top: 50px;
+  height: 100px;
   text-align: center;
   color: white;
   text-shadow: black 0.05em 0.05em 0.05em;
