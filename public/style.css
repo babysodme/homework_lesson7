@@ -31,16 +31,13 @@
   .jumbotronbanner {
     margin-top: 685px;
     margin-bottom: 10px;
-    background-image: url();
     background-position: center;
+    text-align:center;
     width: auto;
-    height: 500px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    color: black;
+    height: 670px;
     
 }
+
 .footerlogo {
   position: center;
   height: 40 px;
