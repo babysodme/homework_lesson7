@@ -30,11 +30,13 @@
  
   .jumbotronbanner {
     margin-top: 0px;
-    margin-bottom: 10px;
-    background-position: center;
+    margin-bottom: 20px;
+    background-image: url(https://ws4.sinaimg.cn/large/006tKfTcly1fjgyeea8a5j31hc0gotjt.jpg);
+    background-size:100%;
     text-align:center;
-    width: auto;
-    height: 670px;
+    background-repeat: no-repeat;
+    width:100%;
+    height:100%;
     
 }
 .footerlogo {
