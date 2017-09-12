@@ -37,8 +37,8 @@
 2.  McHale
 3.  Parish
 
-+   Red
-+   Green
++Red
++ Green
 +   Blue
 
 -   Red
